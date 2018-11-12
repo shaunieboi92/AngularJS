@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang ="en" >
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+	<script src= js/angular.min.js></script>
+</head>
+<body ng-app="">
+	Your Name: <input type="text" ng-model="name"><br>
+	Welcome {{name | uppercase}}<br>
+	<!-- for currency default is dollar sign $ -->
+	Currency: <input type="text" ng-model="price"><br>
+	Price is {{price | currency: "Rs."}}
+	<!-- it automatically kicks out alphabets -->
+</body >
+</html>

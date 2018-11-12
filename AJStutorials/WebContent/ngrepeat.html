@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app="">
+<!-- ng means angular, app means you are working with an app
+ -->
+<head>
+<meta charset="ISO-8859-1">
+<title>AngularJS | Hands On!</title>
+<script src = "js/angular.min.js"></script>
+</head>
+<body>
+<!-- create array in ng-init -->
+	<div ng-init = "myFavLan =[{name: 'PHP' , extension: '.php'},
+	{name: 'Javascript' , extension: '.js'},
+	{name: 'Ruby' , extension: '.rb'},
+	{name: 'C++' , extension: '.cpp'}]">
+		<p ng-repeat="language in myFavLan">
+			Name: {{language.name}}<br>
+			Extension: {{language.extension}}<br>
+		<!-- bla in blas replaces for loop in java -->
+		</p>
+	</div>
+</body>
+</html>
