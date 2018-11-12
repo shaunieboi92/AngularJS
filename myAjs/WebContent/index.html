@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>myAJS</title>
+<script src = "js/angular.min.js"></script>
+<script src = "js/appModel.js"></script>
+<script src = "js/myController.js"></script>
+
+</head>
+<!-- set angular js as  directive -->
+<body ng-app ="myapp" ng-controller ="ctrl">
+<h1>Login Form</h1><hr>
+<form action = "next.html" ng-submit = "fun1($event)">
+username: <input name = "uname" ng-model="un"><div style = "color: red">{{msg1}}</div><br>
+password: <input type ="password" name = "pwd" ng-model="pw"><div style = "color: red">{{msg2}}</div>
+<br>
+<input type = "submit" value = "login">
+</form>
+</body>
+</html>
